@@ -35,6 +35,14 @@ public class Venta implements Serializable {
 	@ManyToOne
 	@JoinColumn(name="RUTCLIENTE")
 	private Usuario usuario;
+	
+	private void  mensaje(){
+		System.out.println("hola mundo");
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
 
 	public Venta() {
 	}
