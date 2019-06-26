@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="ProyectoFinal_EJB" transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>entities.Categoria</class>
+		<class>entities.Detalle</class>
+		<class>entities.Producto</class>
+		<class>entities.Usuario</class>
+		<class>entities.Venta</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:xe"/>
+			<property name="javax.persistence.jdbc.user" value="ventas"/>
+			<property name="javax.persistence.jdbc.user" value="ventas"/>
+			<property name="javax.persistence.jdbc.password" value="1234"/>
+			<property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect" />			
+		</properties>
+	</persistence-unit>
+</persistence>
